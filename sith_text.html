@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <div id="sith_text">sith</div>
+
+  <script>
+    var sith_text = document.getElementById('sith_text');
+    sith_text.style.WebkitBackgroundClip = 'text';
+    sith_text.style.WebkitTextFillColor = 'transparent'
+  </script>
+
+  <style type="text/css">
+    body {
+      background: black;
+    }
+    #sith_text {
+      margin-top: 200px;
+
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 200px;
+      line-height: 205px;
+      background: url('fire.gif');  /*Darth Maul*/
+    }
+
+    #sith_text:hover{
+      animation: zoom 14s linear;
+    }
+
+
+    @keyframes zoom {
+      100% {
+        transform: scale(300);
+        /*transform: translateX(-10%);*/
+      }
+    }
+
+  </style>
+</body>
+</html>
+
+
+
+
+
+
+  <!-- <a href='#sith_text' id='activation_link'>Sith Text</a> -->
+<!--
+  <script>
+    (function(){
+      $('activation_link').click(()=>{
+        this.fade(2000);
+      });
+    }):
+  </script>
+ -->
+
+
+
+  <!--
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+      /*text-shadow: 5px 5px 250px red;*/
+
+ /*   #sith_text:target {
+      animation: enlarge_text 5s linear 3s;
+    }
+
+    @keyframes enlarge_text {
+
+      100% { font-size: 1400px; line-height: 1400px;}
+    }*/
+ -->
