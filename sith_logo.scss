@@ -1,7 +1,7 @@
 $sith_img_side_length: 300px;
 $sith_font_size: 30px;
 $sith_font_width: 20px;
-$sith_font_padding_from_logo: 10px;
+$sith_font_padding_from_logo: 16px;
 $sith_font: $sith_font_size Monaco, MonoSpace;
 
 .sith-icon-container {
@@ -12,9 +12,13 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
   width: $sith_img_side_length;
   height: $sith_img_side_length;
 
+  .sith-letters-position-1{
+
+  }
+
   .sith-icon-text {
     position: absolute;
-    left: ($sith_img_side_length / 2) - ($sith_font_width / 2);
+    left: ($sith_img_side_length / 2);
     margin: 0;
     padding: 0;
 
@@ -23,15 +27,16 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
     .sith-letter {
       text-align: center;
       font: $sith_font;
-      height: $sith_img_side_length + (2 * $sith_font_size) + (2 * $sith_font_padding_from_logo);
+      height: $sith_img_side_length + (2 * $sith_font_size); //+ (2 * $sith_font_padding_from_logo);
       position: absolute;
       width: $sith_font_width;
       text-shadow: 0 3px 5px red;
       font-weight: bold;
-      top: -($sith_font_size + $sith_font_padding_from_logo);
+      top: 0 - ($sith_font_size + $sith_font_padding_from_logo);
+      left: -($sith_font_width / 2);
 
-      .top-text {
-        top: 0 - $sith_font_size;
+      &.top-text {
+        // top: 0 - $sith_font_size;
 
         $degree_of_rotation: 6;
         $num_of_letters: 15;
@@ -48,7 +53,7 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
 
 
 
-      .bottom-text {
+      &.bottom-text {
         $degree_of_rotation: 6;
         $num_of_letters: 16;
         $i: 0;
@@ -56,7 +61,7 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
 
         @while $i < $num_of_letters {
           &.char#{$i+1} {
-            transform: rotate( #{ ($middle_index_of_letters * $degree_of_rotation) - ($i * $degree_of_rotation) - 180}deg );
+            transform: rotate( #{ ($middle_index_of_letters * $degree_of_rotation) - ($i * $degree_of_rotation ) - 180}deg );
           }
           $i: $i + 1;
         }

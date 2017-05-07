@@ -6,7 +6,7 @@
   height: 300px; }
   .sith-icon-container .sith-icon-text {
     position: absolute;
-    left: 140px;
+    left: 150px;
     margin: 0;
     padding: 0; }
     .sith-icon-container .sith-icon-text .upsidedown {
@@ -14,75 +14,74 @@
     .sith-icon-container .sith-icon-text .sith-letter {
       text-align: center;
       font: 30px Monaco, MonoSpace;
-      height: 380px;
+      height: 360px;
       position: absolute;
       width: 20px;
       text-shadow: 0 3px 5px red;
       font-weight: bold;
-      top: -40px; }
-      .sith-icon-container .sith-icon-text .sith-letter .top-text {
-        top: -30px; }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char1 {
-          transform: rotate(-36deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char2 {
-          transform: rotate(-30deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char3 {
-          transform: rotate(-24deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char4 {
-          transform: rotate(-18deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char5 {
-          transform: rotate(-12deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char6 {
-          transform: rotate(-6deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char7 {
-          transform: rotate(0deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char8 {
-          transform: rotate(6deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char9 {
-          transform: rotate(12deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char10 {
-          transform: rotate(18deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char11 {
-          transform: rotate(24deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char12 {
-          transform: rotate(30deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char13 {
-          transform: rotate(36deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char14 {
-          transform: rotate(42deg); }
-        .sith-icon-container .sith-icon-text .sith-letter .top-text.char15 {
-          transform: rotate(48deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char1 {
+      top: -46px;
+      left: -10px; }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char1 {
+        transform: rotate(-36deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char2 {
+        transform: rotate(-30deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char3 {
+        transform: rotate(-24deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char4 {
+        transform: rotate(-18deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char5 {
+        transform: rotate(-12deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char6 {
+        transform: rotate(-6deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char7 {
+        transform: rotate(0deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char8 {
+        transform: rotate(6deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char9 {
+        transform: rotate(12deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char10 {
+        transform: rotate(18deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char11 {
+        transform: rotate(24deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char12 {
+        transform: rotate(30deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char13 {
+        transform: rotate(36deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char14 {
+        transform: rotate(42deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.top-text.char15 {
+        transform: rotate(48deg); }
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char1 {
         transform: rotate(-132deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char2 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char2 {
         transform: rotate(-138deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char3 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char3 {
         transform: rotate(-144deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char4 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char4 {
         transform: rotate(-150deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char5 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char5 {
         transform: rotate(-156deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char6 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char6 {
         transform: rotate(-162deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char7 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char7 {
         transform: rotate(-168deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char8 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char8 {
         transform: rotate(-174deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char9 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char9 {
         transform: rotate(-180deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char10 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char10 {
         transform: rotate(-186deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char11 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char11 {
         transform: rotate(-192deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char12 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char12 {
         transform: rotate(-198deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char13 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char13 {
         transform: rotate(-204deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char14 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char14 {
         transform: rotate(-210deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char15 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char15 {
         transform: rotate(-216deg); }
-      .sith-icon-container .sith-icon-text .sith-letter .bottom-text.char16 {
+      .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char16 {
         transform: rotate(-222deg); }
   .sith-icon-container .sith-icon {
     font: 30px Monaco, MonoSpace;
