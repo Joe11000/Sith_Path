@@ -1,0 +1,87 @@
+.spinning-sith-icon-container {
+  box-sizing: border-box;
+  padding: 30px;
+  /*width: 300px;*/
+
+  .spinning-sith-icon-text {
+    position: absolute;
+    left: 15%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .spinning-sith-icon-text {
+    .sith-letter {
+      font: 30px Monaco, MonoSpace;
+      height: 380px;
+      position: absolute;
+      width: 20px;
+      left: 170px;
+      text-shadow: 0 3px 5px red;
+      font-weight: bold;
+
+    }
+    .top-text {
+      top: -15px;
+    }
+
+    .bottom-text {
+      top: -380px;
+    }
+    $degree_of_rotation: 6;
+    $num_of_letters: 16;
+    $i: 0;
+    $middle_index_of_letters: (($num_of_letters - ($num_of_letters % 2)) / 2);
+
+    @while $i < $num_of_letters {
+      .bottom-text.char#{$i+1} {
+        transform: rotate( #{ ($middle_index_of_letters * $degree_of_rotation) - ($i * $degree_of_rotation) - 180}deg );
+         // -webkit-transform: rotateX(180deg);
+    // transform: rotateX(180deg);
+    transform-origin: bottom center;
+    position: absolute
+
+      }
+      $i: $i + 1;
+    }
+
+
+
+  }
+
+
+  .sith-silhouette {
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    border-radius: 150px;
+  }
+
+  /*span.top-text {
+    transform-origin: center bottom;
+  }*/
+
+
+
+  $degree_of_rotation: 6;
+  $num_of_letters: 15;
+  $i: 0;
+  $middle_index_of_letters: (($num_of_letters - ($num_of_letters % 2)) / 2);
+
+  @while $i < $num_of_letters {
+    .top-text.char#{$i+1} { transform: rotate( #{($i * $degree_of_rotation) - ($middle_index_of_letters * $degree_of_rotation)}deg ); }
+    $i: $i + 1;
+  }
+
+
+
+}
+
+
+
+    .upsidedown {
+      // position: absolute;
+      transform: rotateXY(180deg, 270deg) !important;
+      // transform: rotateY(180deg) !important;
+      // bottom: 20px;
+    }

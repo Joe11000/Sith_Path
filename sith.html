@@ -26,8 +26,8 @@
 
   </style>
 
-  <iframe id='light_saber' src='http://www.saberparts.com/#/configure?code=4.117.4.0-3.102.4.0-2.46.4.0-1.166.4.0-7.152.19.0-5.143.0.0' />
-  <iframe id='light_saber' src='http://www.saberparts.com/#/configure?code=4.137.4.0-3.102.4.0-2.46.4.0-1.21.4.0-7.152.19.0-5.143.0.0'></iframe>
+  <!-- <iframe id='light_saber' src='http://www.saberparts.com/#/configure?code=4.117.4.0-3.102.4.0-2.46.4.0-1.166.4.0-7.152.19.0-5.143.0.0' /> -->
+  <!-- <iframe id='light_saber' src='http://www.saberparts.com/#/configure?code=4.137.4.0-3.102.4.0-2.46.4.0-1.21.4.0-7.152.19.0-5.143.0.0'></iframe> -->
   <style>
     #light_saber {
       width: 600px;
@@ -43,165 +43,83 @@
 
 
 
+
+
 <!-- https://css-tricks.com/set-text-on-a-circle/ -->
   <div class='spinning-sith-icon-container'>
-    <p class='spinning-sith-icon-text' >
-      <span class="char1">A</span>
-      <span class="char2"> </span>
-      <span class="char3">P</span>
-      <span class="char4">o</span>
-      <span class="char5">w</span>
-      <span class="char6">e</span>
-      <span class="char7">r</span>
-      <span class="char8">f</span>
-      <span class="char9">u</span>
-      <span class="char10">l</span>
-      <span class="char11"> </span>
-      <span class="char12">S</span>
-      <span class="char13">i</span>
-      <span class="char14">t</span>
-      <span class="char15">h</span>
-      <span class="char16"> </span>
-      <span class="char17">Y</span>
-      <span class="char18">o</span>
-      <span class="char19">u</span>
-      <span class="char20"> </span>
-      <span class="char21">W</span>
-      <span class="char22">i</span>
-      <span class="char23">l</span>
-      <span class="char24">l</span>
-      <span class="char25"> </span>
-      <span class="char26">B</span>
-      <span class="char27">e</span>
-      <span class="char28">c</span>
-      <span class="char29">o</span>
-      <span class="char30">m</span>
-      <span class="char31">e</span>
-      <span class="char32">.</span>
-      <span class="char33">◈</span>
-      <span class="char34">◈</span>
-    </p>
-    <img class='sith-silhouette' src="sith-silhouette.jpg"  >
+    <div class='spinning-sith-icon-text' >
+        <span class="char1 top-text sith-letter">A</span>
+        <span class="char2 top-text sith-letter"> </span>
+        <span class="char3 top-text sith-letter">P</span>
+        <span class="char4 top-text sith-letter">o</span>
+        <span class="char5 top-text sith-letter">w</span>
+        <span class="char6 top-text sith-letter">e</span>
+        <span class="char7 top-text sith-letter">r</span>
+        <span class="char8 top-text sith-letter">f</span>
+        <span class="char9 top-text sith-letter">u</span>
+        <span class="char10 top-text sith-letter">l</span>
+        <span class="char11 top-text sith-letter"> </span>
+        <span class="char12 top-text sith-letter">S</span>
+        <span class="char13 top-text sith-letter">i</span>
+        <span class="char14 top-text sith-letter">t</span>
+        <span class="char15 top-text sith-letter">h</span>
 
-    <style type="text/css">
+<!--
+        <span class="char1 left-icon sith-letter">◈</span>
+        <span class="char2 right-icon sith-letter">◈</span> -->
 
-
-    .spinning-sith-icon-container {
-      box-sizing: border-box;
-      padding: 30px;
-    }
-
-      .spinning-sith-icon-text {
-        position: relative;
-        margin: 0;
-        padding: 0;
-      }
-
-      .spinning-sith-icon-text span{
-        font: 26px Monaco, MonoSpace;
-        height: 380px;
-        position: absolute;
-        width: 20px;
-        left: 170px;
-        top: -10px;
-        text-shadow: 0 3px 3px red;
-        font-weight: bold;
-      }
-
-      .sith-silhouette {
-        height: 300px;
-        width: 300px;
-        margin: 30px;
-        border-radius: 150px;
-      }
-
-      .spinning-sith-icon {
-        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-        animation: mymove 5s infinite;
-      }
-
-      /* Chrome, Safari, Opera */
-      @-webkit-keyframes mymove { 50% {text-shadow: 10px 20px 30px blue;} }
-
-      /* Standard syntax */
-      @keyframes mymove { 50% {text-shadow: 10px 20px 30px blue;} }
-
-      .char1 { transform: rotate(-90deg); }
-      .char2 { transform: rotate(-84deg); }
-      .char3 { transform: rotate(-78deg); }
-      .char4 { transform: rotate(-72deg); }
-      .char5 { transform: rotate(-66deg); }
-      .char6 { transform: rotate(-60deg); }
-      .char7 { transform: rotate(-54deg); }
-      .char8 { transform: rotate(-48deg); }
-      .char9 { transform: rotate(-42deg); }
-      .char10 { transform: rotate(-36deg); }
-      .char11 { transform: rotate(-30deg); }
-      .char12 { transform: rotate(-24deg); }
-      .char13 { transform: rotate(-18deg); }
-      .char14 { transform: rotate(-12deg); }
-      .char15 { transform: rotate(-6deg); }
-      .char16 { transform: rotate(0deg); }
-      .char17 { transform: rotate(6deg); }
-      .char18 { transform: rotate(12deg); }
-      .char19 { transform: rotate(18deg); }
-      .char20 { transform: rotate(24deg); }
-      .char21 { transform: rotate(30deg); }
-      .char22 { transform: rotate(36deg); }
-      .char23 { transform: rotate(42deg); }
-      .char24 { transform: rotate(48deg); }
-      .char25 { transform: rotate(54deg); }
-      .char26 { transform: rotate(60deg); }
-      .char27 { transform: rotate(66deg); }
-      .char28 { transform: rotate(72deg); }
-      .char29 { transform: rotate(78deg); }
-      .char30 { transform: rotate(84deg); }
-      .char31 { transform: rotate(90deg); }
-      .char32 { transform: rotate(96deg); }
-      .char33 { transform: rotate(140deg); }
-      .char34 { transform: rotate(216deg);  }
-
-/*
-      .char1 { transform: rotate(5deg); }
-      .char2 { transform: rotate(10deg); }
-      .char3 { transform: rotate(15deg); }
-      .char4 { transform: rotate(20deg); }
-      .char5 { transform: rotate(25deg); }
-      .char6 { transform: rotate(30deg); }
-      .char7 { transform: rotate(35deg); }
-      .char8 { transform: rotate(40deg); }
-      .char9 { transform: rotate(45deg); }
-      .char10 { transform: rotate(50deg); }
-      .char11 { transform: rotate(55deg); }
-      .char12 { transform: rotate(60deg); }
-      .char13 { transform: rotate(65deg); }
-      .char14 { transform: rotate(70deg); }
-      .char15 { transform: rotate(75deg); }
-      .char16 { transform: rotate(80deg); }
-      .char17 { transform: rotate(85deg); }
-      .char18 { transform: rotate(90deg); }
-      .char19 { transform: rotate(95deg); }
-      .char20 { transform: rotate(100deg); }
-      .char21 { transform: rotate(105deg); }
-      .char22 { transform: rotate(110deg); }
-      .char23 { transform: rotate(115deg); }
-      .char24 { transform: rotate(120deg); }
-      .char25 { transform: rotate(125deg); }
-      .char26 { transform: rotate(130deg); }
-      .char27 { transform: rotate(135deg); }
-      .char28 { transform: rotate(140deg); }
-      .char29 { transform: rotate(145deg); }
-      .char30 { transform: rotate(150deg); }
-      .char31 { transform: rotate(155deg); }
-      .char32 { transform: rotate(160deg); }*/
-
-
-
-
-    </style>
+        <span class="char1 bottom-text sith-letter">
+          <div class='upsidedown'>Y</div>
+        </span>
+        <span class="char2 bottom-text sith-letter">
+          <div class='upsidedown'>o</div>
+        </span>
+        <span class="char3 bottom-text sith-letter">
+          <div class='upsidedown'>u</div>
+        </span>
+        <span class="char4 bottom-text sith-letter">
+          <div class='upsidedown'> </div>
+        </span>
+        <span class="char5 bottom-text sith-letter">
+          <div class='upsidedown'>W</div>
+        </span>
+        <span class="char6 bottom-text sith-letter">
+          <div class='upsidedown'>i</div>
+        </span>
+        <span class="char7 bottom-text sith-letter">
+          <div class='upsidedown'>l</div>
+        </span>
+        <span class="char8 bottom-text sith-letter">
+          <div class='upsidedown'>l</div>
+        </span>
+        <span class="char9 bottom-text sith-letter">
+          <div class='upsidedown'> </div>
+        </span>
+        <span class="char10 bottom-text sith-letter">
+          <div class='upsidedown'>B</div>
+        </span>
+        <span class="char11 bottom-text sith-letter">
+          <div class='upsidedown'>e</div>
+        </span>
+        <span class="char12 bottom-text sith-letter">
+          <div class='upsidedown'>c</div>
+        </span>
+        <span class="char13 bottom-text sith-letter">
+          <div class='upsidedown'>o</div>
+        </span>
+        <span class="char14 bottom-text sith-letter">
+          <div class='upsidedown'>m</div>
+        </span>
+        <span class="char15 bottom-text sith-letter">
+          <div class='upsidedown'>e</div>
+        </span>
+        <span class="char16 bottom-text sith-letter">
+          <div class='upsidedown'>.</div>
+        </span>
+        <img class='sith-silhouette' src="sith-silhouette.jpg"  >
+    </div>
   </div>
-
-
+  <link rel="stylesheet" type="text/css" href='sith_logo.css'>
 
 </body>
 </html>
@@ -240,3 +158,45 @@
       100% { font-size: 1400px; line-height: 1400px;}
     }*/
  -->
+
+
+<!--
+
+
+
+
+
+
+
+      .spinning-sith-icon {
+        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+        animation: mymove 5s infinite;
+      }
+      /* Chrome, Safari, Opera */
+      @-webkit-keyframes mymove { 50% {text-shadow: 10px 20px 30px blue;} }
+
+      /* Standard syntax */
+      @keyframes mymove { 50% {text-shadow: 10px 20px 30px blue;} } -->
+
+
+
+
+<!--   .bottom-text.char16 { transform: rotate(-54deg); }
+  .bottom-text.char17 { transform: rotate(-48deg); }
+  .bottom-text.char18 { transform: rotate(-42deg); }
+  .bottom-text.char19 { transform: rotate(-36deg); }
+  .bottom-text.char20 { transform: rotate(-30deg); }
+  .bottom-text.char21 { transform: rotate(-24deg); }
+  .bottom-text.char22 { transform: rotate(-18deg); }
+  .bottom-text.char23 { transform: rotate(-12deg); }
+  .bottom-text.char24 { transform: rotate(-6deg); }
+  .bottom-text.char25 { transform: rotate(0deg); }
+  .bottom-text.char26 { transform: rotate(6deg); }
+  .bottom-text.char27 { transform: rotate(12deg); }
+  .bottom-text.char28 { transform: rotate(18deg); }
+  .bottom-text.char29 { transform: rotate(24deg); }
+  .bottom-text.char30 { transform: rotate(30deg); }
+  .bottom-text.char31 { transform: rotate(36deg); }
+  .bottom-text.char32 { transform: rotate(42deg); }
+  .bottom-text.char33 { transform: rotate(48deg); }
+  .bottom-text.char34 { transform: rotate(56deg); } -->

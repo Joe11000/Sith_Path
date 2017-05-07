@@ -1,0 +1,128 @@
+.spinning-sith-icon-container {
+  box-sizing: border-box;
+  padding: 30px;
+  /*width: 300px;*/
+  /*span.top-text {
+    transform-origin: center bottom;
+  }*/ }
+  .spinning-sith-icon-container .spinning-sith-icon-text {
+    position: absolute;
+    left: 15%;
+    margin: 0;
+    padding: 0; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .sith-letter {
+    font: 30px Monaco, MonoSpace;
+    height: 380px;
+    position: absolute;
+    width: 20px;
+    left: 170px;
+    text-shadow: 0 3px 5px red;
+    font-weight: bold; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .top-text {
+    top: -15px; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text {
+    top: -380px; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char1 {
+    transform: rotate(-132deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char2 {
+    transform: rotate(-138deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char3 {
+    transform: rotate(-144deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char4 {
+    transform: rotate(-150deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char5 {
+    transform: rotate(-156deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char6 {
+    transform: rotate(-162deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char7 {
+    transform: rotate(-168deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char8 {
+    transform: rotate(-174deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char9 {
+    transform: rotate(-180deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char10 {
+    transform: rotate(-186deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char11 {
+    transform: rotate(-192deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char12 {
+    transform: rotate(-198deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char13 {
+    transform: rotate(-204deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char14 {
+    transform: rotate(-210deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char15 {
+    transform: rotate(-216deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .spinning-sith-icon-text .bottom-text.char16 {
+    transform: rotate(-222deg);
+    transform-origin: bottom center;
+    position: absolute; }
+  .spinning-sith-icon-container .sith-silhouette {
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    border-radius: 150px; }
+  .spinning-sith-icon-container .top-text.char1 {
+    transform: rotate(-42deg); }
+  .spinning-sith-icon-container .top-text.char2 {
+    transform: rotate(-36deg); }
+  .spinning-sith-icon-container .top-text.char3 {
+    transform: rotate(-30deg); }
+  .spinning-sith-icon-container .top-text.char4 {
+    transform: rotate(-24deg); }
+  .spinning-sith-icon-container .top-text.char5 {
+    transform: rotate(-18deg); }
+  .spinning-sith-icon-container .top-text.char6 {
+    transform: rotate(-12deg); }
+  .spinning-sith-icon-container .top-text.char7 {
+    transform: rotate(-6deg); }
+  .spinning-sith-icon-container .top-text.char8 {
+    transform: rotate(0deg); }
+  .spinning-sith-icon-container .top-text.char9 {
+    transform: rotate(6deg); }
+  .spinning-sith-icon-container .top-text.char10 {
+    transform: rotate(12deg); }
+  .spinning-sith-icon-container .top-text.char11 {
+    transform: rotate(18deg); }
+  .spinning-sith-icon-container .top-text.char12 {
+    transform: rotate(24deg); }
+  .spinning-sith-icon-container .top-text.char13 {
+    transform: rotate(30deg); }
+  .spinning-sith-icon-container .top-text.char14 {
+    transform: rotate(36deg); }
+  .spinning-sith-icon-container .top-text.char15 {
+    transform: rotate(42deg); }
+
+.upsidedown {
+  transform: rotateXY(180deg, 270deg) !important; }
+
+/*# sourceMappingURL=sith_logo.css.map */
