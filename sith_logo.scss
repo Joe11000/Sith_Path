@@ -1,87 +1,116 @@
-.spinning-sith-icon-container {
-  box-sizing: border-box;
-  padding: 30px;
-  /*width: 300px;*/
+$sith_img_side_length: 300px;
+$sith_font_size: 30px;
+$sith_font_width: 20px;
+$sith_font_padding_from_logo: 10px;
+$sith_font: $sith_font_size Monaco, MonoSpace;
 
-  .spinning-sith-icon-text {
+.sith-icon-container {
+  box-sizing: border-box;
+  margin: 40px;
+
+  position: relative;
+  width: $sith_img_side_length;
+  height: $sith_img_side_length;
+
+  .sith-icon-text {
     position: absolute;
-    left: 15%;
+    left: ($sith_img_side_length / 2) - ($sith_font_width / 2);
     margin: 0;
     padding: 0;
-  }
 
-  .spinning-sith-icon-text {
+    .upsidedown { transform: rotate(180deg) ; }
+
     .sith-letter {
-      font: 30px Monaco, MonoSpace;
-      height: 380px;
+      text-align: center;
+      font: $sith_font;
+      height: $sith_img_side_length + (2 * $sith_font_size) + (2 * $sith_font_padding_from_logo);
       position: absolute;
-      width: 20px;
-      left: 170px;
+      width: $sith_font_width;
       text-shadow: 0 3px 5px red;
       font-weight: bold;
+      top: -($sith_font_size + $sith_font_padding_from_logo);
 
-    }
-    .top-text {
-      top: -15px;
-    }
+      .top-text {
+        top: 0 - $sith_font_size;
 
-    .bottom-text {
-      top: -380px;
-    }
-    $degree_of_rotation: 6;
-    $num_of_letters: 16;
-    $i: 0;
-    $middle_index_of_letters: (($num_of_letters - ($num_of_letters % 2)) / 2);
+        $degree_of_rotation: 6;
+        $num_of_letters: 15;
+        $i: 0;
+        $middle_index_of_letters: (($num_of_letters - ($num_of_letters % 2)) / 2) - ($num_of_letters % 2);
 
-    @while $i < $num_of_letters {
-      .bottom-text.char#{$i+1} {
-        transform: rotate( #{ ($middle_index_of_letters * $degree_of_rotation) - ($i * $degree_of_rotation) - 180}deg );
-         // -webkit-transform: rotateX(180deg);
-    // transform: rotateX(180deg);
-    transform-origin: bottom center;
-    position: absolute
-
+        @while $i < $num_of_letters {
+          &.char#{$i+1} {
+            transform: rotate( #{($i * $degree_of_rotation) - ($middle_index_of_letters * $degree_of_rotation)}deg );
+          }
+          $i: $i + 1;
+        }
       }
-      $i: $i + 1;
+
+
+
+      .bottom-text {
+        $degree_of_rotation: 6;
+        $num_of_letters: 16;
+        $i: 0;
+        $middle_index_of_letters: (($num_of_letters - ($num_of_letters % 2)) / 2) - ($num_of_letters % 2);
+
+        @while $i < $num_of_letters {
+          &.char#{$i+1} {
+            transform: rotate( #{ ($middle_index_of_letters * $degree_of_rotation) - ($i * $degree_of_rotation) - 180}deg );
+          }
+          $i: $i + 1;
+        }
+      }
+    }
+
+  }
+
+  .sith-icon {
+    font: $sith_font;
+    text-shadow: 0 0px 10px red;
+    position: absolute;
+    top: 110px;
+
+    .float{
+    animation: float_halocron 10s ease-in-out infinite;
+
+    }
+
+    .rotate{
+      animation: rotate_halocron 4s linear infinite;
+    }
+
+    &.left-icon {
+      left: 20px;
+
+    }
+
+    &.right-icon {
+      right: 25px;
+    }
+  }
+
+    @keyframes float_halocron {
+      from {top: 10;}
+      to { bottom: 40px;}
+    }
+
+    @keyframes rotate_halocron {
+      0%   { transform: rotate(0deg);}
+      50%   { transform: rotate(270deg);  }
+      100% { transform: rotate(540deg);  }
     }
 
 
 
+  img.sith-silhouette {
+    height: $sith_img_side_length;
+    width: $sith_img_side_length;
+    border-radius: $sith_img_side_length / 2;
   }
-
-
-  .sith-silhouette {
-    height: 300px;
-    width: 300px;
-    margin: 30px;
-    border-radius: 150px;
-  }
-
-  /*span.top-text {
-    transform-origin: center bottom;
-  }*/
-
-
-
-  $degree_of_rotation: 6;
-  $num_of_letters: 15;
-  $i: 0;
-  $middle_index_of_letters: (($num_of_letters - ($num_of_letters % 2)) / 2);
-
-  @while $i < $num_of_letters {
-    .top-text.char#{$i+1} { transform: rotate( #{($i * $degree_of_rotation) - ($middle_index_of_letters * $degree_of_rotation)}deg ); }
-    $i: $i + 1;
-  }
-
-
-
 }
 
 
 
-    .upsidedown {
-      // position: absolute;
-      transform: rotateXY(180deg, 270deg) !important;
-      // transform: rotateY(180deg) !important;
-      // bottom: 20px;
-    }
+
+
