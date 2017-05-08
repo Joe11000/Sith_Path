@@ -12,10 +12,6 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
   width: $sith_img_side_length;
   height: $sith_img_side_length;
 
-  .sith-letters-position-1{
-
-  }
-
   .sith-icon-text {
     position: absolute;
     left: ($sith_img_side_length / 2);
@@ -30,7 +26,7 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
     .sith-letter {
       text-align: center;
       font: $sith_font;
-      height: $sith_img_side_length + (2 * $sith_font_size); //+ (2 * $sith_font_padding_from_logo);
+      height: $sith_img_side_length + (2 * $sith_font_size);
       position: absolute;
       width: $sith_font_width;
       text-shadow: 0 3px 5px red;
@@ -109,8 +105,3 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
     border-radius: $sith_img_side_length / 2;
   }
 }
-
-
-
-
-
