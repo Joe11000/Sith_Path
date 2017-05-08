@@ -25,7 +25,6 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
     .upsidedown {
       transform: rotate(180deg);
       position: absolute;
-      // top: -5px;
     }
 
     .sith-letter {
@@ -40,15 +39,13 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
       left: -($sith_font_width / 2);
 
       &.top-text {
-        // top: 0 - $sith_font_size;
-
         $degree_of_rotation: 6;
         $num_of_letters: 15;
-        $i: 0;
-        $middle_index_of_letters: $num_of_letters / 2;
+        $i: 1;
+        $middle_index_of_letters: ($num_of_letters/ 2) + 0.5;
 
-        @while $i < $num_of_letters {
-          &.char#{$i+1} {
+        @while $i <= $num_of_letters {
+          &.char#{$i} {
             transform: rotate( #{($i * $degree_of_rotation) - ($middle_index_of_letters * $degree_of_rotation)}deg );
           }
           $i: $i + 1;
@@ -57,14 +54,14 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
 
       &.bottom-text {
         $degree_of_rotation: 6;
-        $num_of_letters: 15;
+        $num_of_letters: 16;
         $i: 0;
-        $middle_index_of_letters: $num_of_letters / 2;
+        $middle_index_of_letters: ($num_of_letters/ 2) + 0.5;
         position: absolute;
         top: -20px;
         @while $i < $num_of_letters {
           &.char#{$i+1} {
-            transform: rotate(  #{ 180 + ($middle_index_of_letters * $degree_of_rotation) - ($i * $degree_of_rotation ) }deg );
+            transform: rotate(  #{ 180 + ($middle_index_of_letters * $degree_of_rotation) - ($i * $degree_of_rotation + 6) }deg );
           }
           $i: $i + 1;
         }
@@ -105,10 +102,6 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
       right: 100px;
     }
   }
-
-
-
-
 
   img.sith-silhouette {
     height: $sith_img_side_length;
