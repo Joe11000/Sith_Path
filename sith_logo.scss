@@ -22,7 +22,11 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
     margin: 0;
     padding: 0;
 
-    .upsidedown { transform: rotate(180deg) ; }
+    .upsidedown {
+      transform: rotate(180deg);
+      position: absolute;
+      // top: -5px;
+    }
 
     .sith-letter {
       text-align: center;
@@ -41,7 +45,7 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
         $degree_of_rotation: 6;
         $num_of_letters: 15;
         $i: 0;
-        $middle_index_of_letters: (($num_of_letters - ($num_of_letters % 2)) / 2) - ($num_of_letters % 2);
+        $middle_index_of_letters: $num_of_letters / 2;
 
         @while $i < $num_of_letters {
           &.char#{$i+1} {
@@ -55,13 +59,14 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
 
       &.bottom-text {
         $degree_of_rotation: 6;
-        $num_of_letters: 16;
+        $num_of_letters: 15;
         $i: 0;
-        $middle_index_of_letters: (($num_of_letters - ($num_of_letters % 2)) / 2) - ($num_of_letters % 2);
-
+        $middle_index_of_letters: $num_of_letters / 2;
+        position: absolute;
+        top: 0px;
         @while $i < $num_of_letters {
           &.char#{$i+1} {
-            transform: rotate( #{ ($middle_index_of_letters * $degree_of_rotation) - ($i * $degree_of_rotation ) - 180}deg );
+            transform: rotate(  #{ 180 + ($middle_index_of_letters * $degree_of_rotation) - ($i * $degree_of_rotation ) }deg );
           }
           $i: $i + 1;
         }
@@ -70,41 +75,42 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
 
   }
 
-  .sith-icon {
+  .sith-halocron {
     font: $sith_font;
     text-shadow: 0 0px 10px red;
     position: absolute;
     top: 110px;
 
-    .float{
-    animation: float_halocron 10s ease-in-out infinite;
+    &.float-animation{
+      animation: float_halocron 10s ease-in-out infinite alternate;
+
+      @keyframes float_halocron {
+        0% {top: 130px;}
+        50% {top: 80px;}
+        100% {top: 130px;}
+      }
+    }
+
+    .rotate-animation{
+      animation: rotate_halocron 8s linear infinite;
+
+      @keyframes rotate_halocron {
+        0%   { transform: rotate(0deg);}
+        100% { transform: rotate(360deg);  }
+      }
+    }
+
+    &.left-halocron {
+      left: 100px;
 
     }
 
-    .rotate{
-      animation: rotate_halocron 4s linear infinite;
-    }
-
-    &.left-icon {
-      left: 20px;
-
-    }
-
-    &.right-icon {
-      right: 25px;
+    &.right-halocron {
+      right: 100px;
     }
   }
 
-    @keyframes float_halocron {
-      from {top: 10;}
-      to { bottom: 40px;}
-    }
 
-    @keyframes rotate_halocron {
-      0%   { transform: rotate(0deg);}
-      50%   { transform: rotate(270deg);  }
-      100% { transform: rotate(540deg);  }
-    }
 
 
 
