@@ -55,15 +55,13 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
         }
       }
 
-
-
       &.bottom-text {
         $degree_of_rotation: 6;
         $num_of_letters: 15;
         $i: 0;
         $middle_index_of_letters: $num_of_letters / 2;
         position: absolute;
-        top: 0px;
+        top: -20px;
         @while $i < $num_of_letters {
           &.char#{$i+1} {
             transform: rotate(  #{ 180 + ($middle_index_of_letters * $degree_of_rotation) - ($i * $degree_of_rotation ) }deg );
@@ -72,7 +70,6 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
         }
       }
     }
-
   }
 
   .sith-halocron {
@@ -102,7 +99,6 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
 
     &.left-halocron {
       left: 100px;
-
     }
 
     &.right-halocron {

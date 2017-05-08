@@ -54,7 +54,7 @@
         transform: rotate(39deg); }
       .sith-icon-container .sith-icon-text .sith-letter.bottom-text {
         position: absolute;
-        top: 0px; }
+        top: -20px; }
         .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char1 {
           transform: rotate(225deg); }
         .sith-icon-container .sith-icon-text .sith-letter.bottom-text.char2 {
