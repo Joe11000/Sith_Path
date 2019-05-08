@@ -1,126 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="sith.css">
+  <script src="sith.js"></script>
 </head>
+
 <body style='background: black;'>
 
-  <div id="sith_text">sith</div>
+  <div id="fire_text" onload="sith_text_style()">sith</div>
 
-  <script>
-    var sith_text = document.getElementById('sith_text');
-    sith_text.style.WebkitBackgroundClip = 'text';
-    sith_text.style.WebkitTextFillColor = 'transparent'
-  </script>
-  <style type="text/css">a
-    #sith_text {
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bolder;
-      font-size: 20px;
-      line-height: 20px;
-      background: url('fire.gif');  /*Darth Maul*/
-      background-clip: text;
-      font-size: 200px;
-      line-height: 20px;
-    }
-
-  </style>
-
-  <iframe id='light_saber' src='http://www.saberparts.com/#/configure?code=4.117.4.0-3.102.4.0-2.46.4.0-1.166.4.0-7.152.19.0-5.143.0.0' /></iframe>
-  <iframe id='light_saber' src='http://www.saberparts.com/#/configure?code=4.137.4.0-3.102.4.0-2.46.4.0-1.21.4.0-7.152.19.0-5.143.0.0'></iframe>
-  <style>
-    #light_saber {
-      width: 600px;
-      height: 350px;
-      display: block;
-      margin: auto;
-    }
-  </style>
-
-  <br>
-  <br>
-  <br>
-
-
-<!-- https://css-tricks.com/set-text-on-a-circle/ -->
-  <div class='sith-icon-container'>
-  <div class='sith-letters-position-1'>
-    <div class='sith-icon-text' >
-        <span class="char1 top-text sith-letter">A</span>
-        <span class="char2 top-text sith-letter"> </span>
-        <span class="char3 top-text sith-letter">P</span>
-        <span class="char4 top-text sith-letter">o</span>
-        <span class="char5 top-text sith-letter">w</span>
-        <span class="char6 top-text sith-letter">e</span>
-        <span class="char7 top-text sith-letter">r</span>
-        <span class="char8 top-text sith-letter">f</span>
-        <span class="char9 top-text sith-letter">u</span>
-        <span class="char10 top-text sith-letter">l</span>
-        <span class="char11 top-text sith-letter"> </span>
-        <span class="char12 top-text sith-letter">S</span>
-        <span class="char13 top-text sith-letter">i</span>
-        <span class="char14 top-text sith-letter">t</span>
-        <span class="char15 top-text sith-letter">h</span>
-
-        <div class=''>
-          <div class="left-halocron sith-halocron float-animation">
-            <div class='rotate-animation'>◈</div>
-          </div>
-          <div class="right-halocron sith-halocron float-animation">
-            <div class='rotate-animation'>◈</div>
+  <!-- <iframe id='light_saber' src='http://www.saberparts.com/#!/configure?code=4.175.4.0-3.85.4.22-2.59.4.0-1.43.4.0-7.152.45.0-5.143.0.0#%2Fconfigure%3Fcode=4.137.4.0-3.102.4.0-2.46.4.0-1.21.4.0-7.152.19.0-5.143.0.0' /></iframe> -->
+  <div class="wrapper">
+    <div class='sith_icon_container'>
+        <div class='sith_letters_position_1'>
+          <div class='sith_icon_text' >
+              <span class="char1 top_text sith_letter">A</span>
+              <span class="char2 top_text sith_letter"> </span>
+              <span class="char3 top_text sith_letter">P</span>
+              <span class="char4 top_text sith_letter">o</span>
+              <span class="char5 top_text sith_letter">w</span>
+              <span class="char6 top_text sith_letter">e</span>
+              <span class="char7 top_text sith_letter">r</span>
+              <span class="char8 top_text sith_letter">f</span>
+              <span class="char9 top_text sith_letter">u</span>
+              <span class="char10 top_text sith_letter">l</span>
+              <span class="char11 top_text sith_letter"> </span>
+              <span class="char12 top_text sith_letter">S</span>
+              <span class="char13 top_text sith_letter">i</span>
+              <span class="char14 top_text sith_letter">t</span>
+              <span class="char15 top_text sith_letter">h</span>
+      
+              <div class=''>
+                <div class="left_halocron sith_halocron float_animation">
+                  <div class='rotate_animation'>◈</div>
+                </div>
+                <div class="right_halocron sith_halocron float_animation">
+                  <div class='rotate_animation'>◈</div>
+                </div>
+              </div>
+      
+              <span class="char1 bottom_text sith_letter">
+                <div class='upsidedown'>Y</div>
+              </span>
+              <span class="char2 bottom_text sith_letter">
+                <div class='upsidedown'>o</div>
+              </span>
+              <span class="char3 bottom_text sith_letter">
+                <div class='upsidedown'>u</div>
+              </span>
+              <span class="char4 bottom_text sith_letter">
+                <div class='upsidedown'> </div>
+              </span>
+              <span class="char5 bottom_text sith_letter">
+                <div class='upsidedown'>W</div>
+              </span>
+              <span class="char6 bottom_text sith_letter">
+                <div class='upsidedown'>i</div>
+              </span>
+              <span class="char7 bottom_text sith_letter">
+                <div class='upsidedown'>l</div>
+              </span>
+              <span class="char8 bottom_text sith_letter">
+                <div class='upsidedown'>l</div>
+              </span>
+              <span class="char9 bottom_text sith_letter">
+                <div class='upsidedown'> </div>
+              </span>
+              <span class="char10 bottom_text sith_letter">
+                <div class='upsidedown'>B</div>
+              </span>
+              <span class="char11 bottom_text sith_letter">
+                <div class='upsidedown'>e</div>
+              </span>
+              <span class="char12 bottom_text sith_letter">
+                <div class='upsidedown'>c</div>
+              </span>
+              <span class="char13 bottom_text sith_letter">
+                <div class='upsidedown'>o</div>
+              </span>
+              <span class="char14 bottom_text sith_letter">
+                <div class='upsidedown'>m</div>
+              </span>
+              <span class="char15 bottom_text sith_letter">
+                <div class='upsidedown'>e</div>
+              </span>
           </div>
         </div>
-
-        <span class="char1 bottom-text sith-letter">
-          <div class='upsidedown'>Y</div>
-        </span>
-        <span class="char2 bottom-text sith-letter">
-          <div class='upsidedown'>o</div>
-        </span>
-        <span class="char3 bottom-text sith-letter">
-          <div class='upsidedown'>u</div>
-        </span>
-        <span class="char4 bottom-text sith-letter">
-          <div class='upsidedown'> </div>
-        </span>
-        <span class="char5 bottom-text sith-letter">
-          <div class='upsidedown'>W</div>
-        </span>
-        <span class="char6 bottom-text sith-letter">
-          <div class='upsidedown'>i</div>
-        </span>
-        <span class="char7 bottom-text sith-letter">
-          <div class='upsidedown'>l</div>
-        </span>
-        <span class="char8 bottom-text sith-letter">
-          <div class='upsidedown'>l</div>
-        </span>
-        <span class="char9 bottom-text sith-letter">
-          <div class='upsidedown'> </div>
-        </span>
-        <span class="char10 bottom-text sith-letter">
-          <div class='upsidedown'>B</div>
-        </span>
-        <span class="char11 bottom-text sith-letter">
-          <div class='upsidedown'>e</div>
-        </span>
-        <span class="char12 bottom-text sith-letter">
-          <div class='upsidedown'>c</div>
-        </span>
-        <span class="char13 bottom-text sith-letter">
-          <div class='upsidedown'>o</div>
-        </span>
-        <span class="char14 bottom-text sith-letter">
-          <div class='upsidedown'>m</div>
-        </span>
-        <span class="char15 bottom-text sith-letter">
-          <div class='upsidedown'>e</div>
-        </span>
+        <img class='sith_silhouette' src="sith_silhouette.jpg"  >
     </div>
-  </div>
 
-    <img class='sith-silhouette' src="sith-silhouette.jpg"  >
+    <iframe id='light_saber' src='http://www.saberparts.com/#!/configure?code=4.130.4.0-3.194.4.0-2.59.4.0-1.27.4.0-7.152.19.0-5.143.0.0#%2Fconfigure%3Fcode=4.137.4.0-3.102.4.0-2.46.4.0-1.21.4.0-7.152.19.0-5.143.0.0'></iframe>
+    </div>
+    <img src="sith_banner.jpg" alt="sith banner" class="banner_left">
+    <img src="sith_banner.jpg" alt="sith banner" class="banner_right">
   </div>
+  
+
+<!-- https://css-tricks.com/set-text-on-a-circle/ -->
+
   <link rel="stylesheet" type="text/css" href='sith_logo.css'>
 
 </body>
@@ -183,22 +160,22 @@
 
 
 
-<!--   .bottom-text.char16 { transform: rotate(-54deg); }
-  .bottom-text.char17 { transform: rotate(-48deg); }
-  .bottom-text.char18 { transform: rotate(-42deg); }
-  .bottom-text.char19 { transform: rotate(-36deg); }
-  .bottom-text.char20 { transform: rotate(-30deg); }
-  .bottom-text.char21 { transform: rotate(-24deg); }
-  .bottom-text.char22 { transform: rotate(-18deg); }
-  .bottom-text.char23 { transform: rotate(-12deg); }
-  .bottom-text.char24 { transform: rotate(-6deg); }
-  .bottom-text.char25 { transform: rotate(0deg); }
-  .bottom-text.char26 { transform: rotate(6deg); }
-  .bottom-text.char27 { transform: rotate(12deg); }
-  .bottom-text.char28 { transform: rotate(18deg); }
-  .bottom-text.char29 { transform: rotate(24deg); }
-  .bottom-text.char30 { transform: rotate(30deg); }
-  .bottom-text.char31 { transform: rotate(36deg); }
-  .bottom-text.char32 { transform: rotate(42deg); }
-  .bottom-text.char33 { transform: rotate(48deg); }
-  .bottom-text.char34 { transform: rotate(56deg); } -->
+<!--   .bottom_text.char16 { transform: rotate(-54deg); }
+  .bottom_text.char17 { transform: rotate(-48deg); }
+  .bottom_text.char18 { transform: rotate(-42deg); }
+  .bottom_text.char19 { transform: rotate(-36deg); }
+  .bottom_text.char20 { transform: rotate(-30deg); }
+  .bottom_text.char21 { transform: rotate(-24deg); }
+  .bottom_text.char22 { transform: rotate(-18deg); }
+  .bottom_text.char23 { transform: rotate(-12deg); }
+  .bottom_text.char24 { transform: rotate(-6deg); }
+  .bottom_text.char25 { transform: rotate(0deg); }
+  .bottom_text.char26 { transform: rotate(6deg); }
+  .bottom_text.char27 { transform: rotate(12deg); }
+  .bottom_text.char28 { transform: rotate(18deg); }
+  .bottom_text.char29 { transform: rotate(24deg); }
+  .bottom_text.char30 { transform: rotate(30deg); }
+  .bottom_text.char31 { transform: rotate(36deg); }
+  .bottom_text.char32 { transform: rotate(42deg); }
+  .bottom_text.char33 { transform: rotate(48deg); }
+  .bottom_text.char34 { transform: rotate(56deg); } -->

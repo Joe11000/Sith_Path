@@ -4,7 +4,7 @@ $sith_font_width: 20px;
 $sith_font_padding_from_logo: 16px;
 $sith_font: $sith_font_size Monaco, MonoSpace;
 
-.sith-icon-container {
+.sith_icon_container {
   box-sizing: border-box;
   margin: 40px;
 
@@ -12,7 +12,7 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
   width: $sith_img_side_length;
   height: $sith_img_side_length;
 
-  .sith-icon-text {
+  .sith_icon_text {
     position: absolute;
     left: ($sith_img_side_length / 2);
     margin: 0;
@@ -23,7 +23,7 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
       position: absolute;
     }
 
-    .sith-letter {
+    .sith_letter {
       text-align: center;
       font: $sith_font;
       height: $sith_img_side_length + (2 * $sith_font_size);
@@ -34,7 +34,7 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
       top: 0 - ($sith_font_size + $sith_font_padding_from_logo);
       left: -($sith_font_width / 2);
 
-      &.top-text {
+      &.top_text {
         $degree_of_rotation: 6;
         $num_of_letters: 15;
         $i: 1;
@@ -48,7 +48,7 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
         }
       }
 
-      &.bottom-text {
+      &.bottom_text {
         $degree_of_rotation: 6;
         $num_of_letters: 15;
         $i: 0;
@@ -65,13 +65,13 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
     }
   }
 
-  .sith-halocron {
+  .sith_halocron {
     font: $sith_font;
     text-shadow: 0 0px 10px red;
     position: absolute;
     top: 110px;
 
-    &.float-animation{
+    &.float_animation{
       animation: float_halocron 10s ease-in-out infinite alternate;
 
       @keyframes float_halocron {
@@ -81,7 +81,7 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
       }
     }
 
-    .rotate-animation{
+    .rotate_animation{
       animation: rotate_halocron 8s linear infinite;
 
       @keyframes rotate_halocron {
@@ -90,16 +90,16 @@ $sith_font: $sith_font_size Monaco, MonoSpace;
       }
     }
 
-    &.left-halocron {
+    &.left_halocron {
       left: 100px;
     }
 
-    &.right-halocron {
+    &.right_halocron {
       right: 100px;
     }
   }
 
-  img.sith-silhouette {
+  img.sith_silhouette {
     height: $sith_img_side_length;
     width: $sith_img_side_length;
     border-radius: $sith_img_side_length / 2;
