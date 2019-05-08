@@ -1,0 +1,155 @@
+.sith_icon_container {
+  box-sizing: border-box;
+  margin: 40px;
+  position: relative;
+  width: 300px;
+  height: 300px; }
+  .sith_icon_container .sith_icon_text {
+    position: absolute;
+    left: 150px;
+    margin: 0;
+    padding: 0; }
+    .sith_icon_container .sith_icon_text .upsidedown {
+      transform: rotate(180deg);
+      position: absolute; }
+    .sith_icon_container .sith_icon_text .sith_letter {
+      text-align: center;
+      font: 30px Monaco, MonoSpace;
+      height: 360px;
+      position: absolute;
+      width: 20px;
+      text-shadow: 0 3px 5px red;
+      font-weight: bold;
+      top: -46px;
+      left: -10px; }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char1 {
+        transform: rotate(-42deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char2 {
+        transform: rotate(-36deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char3 {
+        transform: rotate(-30deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char4 {
+        transform: rotate(-24deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char5 {
+        transform: rotate(-18deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char6 {
+        transform: rotate(-12deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char7 {
+        transform: rotate(-6deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char8 {
+        transform: rotate(0deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char9 {
+        transform: rotate(6deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char10 {
+        transform: rotate(12deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char11 {
+        transform: rotate(18deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char12 {
+        transform: rotate(24deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char13 {
+        transform: rotate(30deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char14 {
+        transform: rotate(36deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.top_text.char15 {
+        transform: rotate(42deg); }
+      .sith_icon_container .sith_icon_text .sith_letter.bottom_text {
+        position: absolute;
+        top: -20px; }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char1 {
+          transform: rotate(222deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char2 {
+          transform: rotate(216deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char3 {
+          transform: rotate(210deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char4 {
+          transform: rotate(204deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char5 {
+          transform: rotate(198deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char6 {
+          transform: rotate(192deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char7 {
+          transform: rotate(186deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char8 {
+          transform: rotate(180deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char9 {
+          transform: rotate(174deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char10 {
+          transform: rotate(168deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char11 {
+          transform: rotate(162deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char12 {
+          transform: rotate(156deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char13 {
+          transform: rotate(150deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char14 {
+          transform: rotate(144deg); }
+        .sith_icon_container .sith_icon_text .sith_letter.bottom_text.char15 {
+          transform: rotate(138deg); }
+  .sith_icon_container .sith_halocron {
+    font: 30px Monaco, MonoSpace;
+    text-shadow: 0 0px 10px red;
+    position: absolute;
+    top: 110px; }
+    .sith_icon_container .sith_halocron.float_animation {
+      animation: float_halocron 10s ease-in-out infinite alternate; }
+@keyframes float_halocron {
+  0% {
+    top: 130px; }
+  50% {
+    top: 80px; }
+  100% {
+    top: 130px; } }
+    .sith_icon_container .sith_halocron .rotate_animation {
+      animation: rotate_halocron 8s linear infinite; }
+@keyframes rotate_halocron {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+    .sith_icon_container .sith_halocron.left_halocron {
+      left: 100px; }
+    .sith_icon_container .sith_halocron.right_halocron {
+      right: 100px; }
+  .sith_icon_container img.sith_silhouette {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px; }
+
+body {
+  background: black; }
+
+.page {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 300px auto;
+  grid-template-areas: "........... fire_text fire_text  fire_text  fire_text ............" "banner_left ........  icon       icon       ......... banner_right" "banner_left ........  icon       icon       ......... banner_right" "banner_left ........  saber      saber      ......... banner_right" "banner_left ........  saber      saber      ......... banner_right";
+  justify-content: center; }
+  .page #fire_text {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 20px;
+    background: url("../images/fire.gif");
+    background-clip: text;
+    font-size: 200px;
+    justify-self: center;
+    grid-area: fire_text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .page #light_saber {
+    width: 600px;
+    height: 350px;
+    clip-path: ellipse(40% 40% at 50% 50%);
+    grid-area: saber; }
+  .page .sith_icon_container {
+    grid-area: icon;
+    justify-self: center; }
+  .page .banner_left {
+    grid-area: banner_left;
+    max-width: 200px; }
+  .page .banner_right {
+    grid-area: banner_right;
+    max-width: 200px; }
+
+/*# sourceMappingURL=sith.css.map */

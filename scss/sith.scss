@@ -1,0 +1,62 @@
+// scss --watch sith.scss:../css/sith.css
+@import 'sith_logo';
+
+body {
+  background: black;
+}
+
+.page {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 300px auto;
+  grid-template-areas:  "........... fire_text fire_text  fire_text  fire_text ............"
+                        "banner_left ........  icon       icon       ......... banner_right"
+                        "banner_left ........  icon       icon       ......... banner_right"
+                        "banner_left ........  saber      saber      ......... banner_right"
+                        "banner_left ........  saber      saber      ......... banner_right";
+  justify-content: center;
+
+    #fire_text {
+      // text-align: center;
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 20px;
+      line-height: 20px;
+      background: url('../images/fire.gif');
+      background-clip: text;
+      font-size: 200px;
+      // line-height: 20px;
+      // height: 300px;
+      justify-self: center;
+    grid-area: fire_text;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    
+    #light_saber {
+    width: 600px;
+    height: 350px;
+    // display: block;
+    // margin: auto;
+    clip-path: ellipse(40% 40% at 50% 50%);
+    grid-area: saber;
+  }
+
+  .sith_icon_container {
+    grid-area: icon;
+    justify-self: center;
+  }
+
+  .banner_left {
+   grid-area: banner_left;
+   max-width: 200px;
+  }
+  
+  .banner_right {
+   grid-area: banner_right;
+   max-width: 200px;
+  }
+}
+
