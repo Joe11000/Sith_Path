@@ -118,38 +118,101 @@
 body {
   background: black; }
 
-.page {
+*, ::before, ::after {
+  box-sizing: border-box; }
+
+.line_wrapper:nth-of-type(even) {
+  justify-content: right;
+  justify-self: right; }
+.line_wrapper .quote {
+  box-shadow: 0 0 75px 45px black inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  --quote-height: 200px;
+  height: var(--quote-height);
+  width: 100%;
+  color: yellow; }
+  .line_wrapper .quote::before {
+    content: '\"';
+    color: black;
+    font-size: 2em; }
+  .line_wrapper .quote::after {
+    content: '\"';
+    color: black;
+    font-size: 2em; }
+.line_wrapper .line_one .good_intention figure {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  max-width: 100vw; }
+  .line_wrapper .line_one .good_intention figure img {
+    max-width: 100vw;
+    width: 100%;
+    overflow: hidden; }
+.line_wrapper .line_one .sith_eyes {
+  background: url(../images/anakin_sith_eyes.jpg); }
+
+.end_page {
+  z-index: 1;
   width: 100%;
   display: grid;
-  grid-template-rows: 300px auto;
-  grid-template-areas: "........... fire_text fire_text  fire_text  fire_text ............" "banner_left ........  icon       icon       ......... banner_right" "banner_left ........  icon       icon       ......... banner_right" "banner_left ........  saber      saber      ......... banner_right" "banner_left ........  saber      saber      ......... banner_right";
-  justify-content: center; }
-  .page #fire_text {
+  grid-template-rows: auto 100px auto;
+  grid-tempate-columns: 1fr 1fr 1fr 8fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas: "first_line_good_intention  first_line_good_intention  first_line_good_intention   first_line_good_intention  first_line_good_intention  first_line_good_intention   first_line_good_intention   first_line_good_intention" "first_line_evil_intention  first_line_evil_intention  first_line_evil_intention   first_line_evil_intention  first_line_evil_intention  first_line_evil_intention   first_line_evil_intention   first_line_evil_intention" "second_line_good_intention second_line_good_intention second_line_good_intention  second_line_good_intention second_line_good_intention second_line_good_intention  second_line_good_intention  second_line_good_intention" "second_line_evil_intention second_line_evil_intention second_line_evil_intention  second_line_evil_intention second_line_evil_intention second_line_evil_intention  second_line_evil_intention  second_line_evil_intention" "third_line_good_intention  third_line_good_intention  third_line_good_intention   third_line  third_line_good_intention  third_line_good_intention   third_line_good_intention   third_linee_geood_intention" "third_line_evil_intention  third_line_evil_intention  third_line_veil_intention   third_line_evil_intention  third_line_evil_intention  third_line_evil_intention   third_line_evil_intention   third_line_evil_intention" "fourth_line_good_intention fourth_line_good_intention fourth_line_good_intention  fourth_line_good_intention fourth_line_good_intention fourth_line_good_intention  fourth_line_good_intention  fourth_line_good_intention" "fourth_line fourth_line fourth_line  fourth_line fourth_line fourth_line  fourth_line  fourth_line" "fifth_line  fifth_line  fifth_line   fifth_line  fifth_line  fifth_line   fifth_line   fifth_line" "fifth_line  fifth_line  fifth_line   fifth_line  fifth_line  fifth_line   fifth_line   fifth_line" "sixth_line  sixth_line  sixth_line   sixth_line  sixth_line  sixth_line   sixth_line   sixth_line" "sixth_line  sixth_line  sixth_line   sixth_line  sixth_line  sixth_line   sixth_line   sixth_line" ".           ........... fire_text    fire_text   fire_text   fire_text    ............ ." ".           banner_left banner_left  icon        icon        banner_right banner_right ." ".           banner_left banner_left  icon        icon        banner_right banner_right ." ".           banner_left banner_left  saber       saber       banner_right banner_right ." ".           banner_left banner_left  saber       saber       banner_right banner_right ."; }
+  .end_page #fire_text {
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 20px;
-    line-height: 20px;
     background: url("../images/fire.gif");
-    background-clip: text;
     font-size: 200px;
     justify-self: center;
     grid-area: fire_text;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; }
-  .page #light_saber {
+  .end_page #light_saber {
     width: 600px;
     height: 350px;
     clip-path: ellipse(40% 40% at 50% 50%);
-    grid-area: saber; }
-  .page .sith_icon_container {
-    grid-area: icon;
+    grid-area: saber;
     justify-self: center; }
-  .page .banner_left {
-    grid-area: banner_left;
-    max-width: 200px; }
-  .page .banner_right {
-    grid-area: banner_right;
-    max-width: 200px; }
+  .end_page .sith_icon_container {
+    grid-area: icon;
+    justify-self: center;
+    align-self: center; }
+  .end_page .banner_left {
+    grid-area: banner_left; }
+    .end_page .banner_left img {
+      max-width: 100%;
+      height: auto; }
+  .end_page .banner_right {
+    grid-area: banner_right; }
+    .end_page .banner_right img {
+      max-width: 100%;
+      height: auto; }
+
+.page_2 {
+  background: url(../images/oath.jpg);
+  z-index: 2; }
+
+@media only screen and (min-width: 800px) {
+  .end_page {
+    grid-template-columns: 1fr 2fr 4fr 4fr 2fr 1fr;
+    grid-template-areas: "fire_text fire_text    fire_text  fire_text  fire_text    fire_text" "......... banner_left  icon       icon       banner_right ........." "......... banner_left  icon       icon       banner_right ........." "......... banner_left  saber      saber      banner_right ........." "......... banner_left  saber      saber      banner_right .........";
+    grid-template-rows: auto 100px auto; }
+
+  .banner_left {
+    grid-area: banner_left; }
+    .banner_left img {
+      max-width: 100%;
+      height: auto; }
+
+  .banner_right {
+    grid-area: banner_right; }
+    .banner_right img {
+      max-width: 100%;
+      height: auto; } }
 
 /*# sourceMappingURL=sith.css.map */

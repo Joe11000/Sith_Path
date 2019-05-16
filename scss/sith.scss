@@ -5,25 +5,103 @@ body {
   background: black;
 }
 
-.page {
+*, ::before, ::after {
+  box-sizing: border-box
+}
+.line_wrapper {
+  &:nth-of-type(even){
+    justify-content: right;
+    justify-self: right;
+  }
+  .quote {
+    box-shadow: 0 0 75px 45px black inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    --quote-height: 200px;
+    height: var(--quote-height);
+    width: 100%;
+    color: yellow; 
+
+    &::before {
+      content: '\"';
+      color: black;
+      font-size: 2em;
+    }
+    &::after {
+      content: '\"';
+      color: black; 
+      font-size: 2em;
+    }
+  }
+
+  .line_one {
+    .good_intention {
+      figure 
+      {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+
+        img {
+          max-width: 100vw;
+          width: 100%;
+          overflow: hidden;
+        }
+          max-width: 100vw;
+
+      }
+    }
+      // background: radial-gradient( rgba(255,255,255, 0.2), white);
+                  
+      // background-position: left top ;    
+    .evil_intention {
+
+    }
+    .sith_eyes {
+      background: url(../images/anakin_sith_eyes.jpg);
+    }
+
+
+    // background-color:rgba(255, 33, 33, 0.3);
+                
+    // background-repeat: none, none, none;
+    // margin-bottom: var(--quote-height);  
+  }
+}
+
+.end_page {
+  z-index: 1;
   width: 100%;
   display: grid;
-  grid-template-rows: 300px auto;
-  grid-template-areas:  "........... fire_text fire_text  fire_text  fire_text ............"
-                        "banner_left ........  icon       icon       ......... banner_right"
-                        "banner_left ........  icon       icon       ......... banner_right"
-                        "banner_left ........  saber      saber      ......... banner_right"
-                        "banner_left ........  saber      saber      ......... banner_right";
-  justify-content: center;
+  grid-template-rows: auto 100px auto ;
+  grid-tempate-columns: 1fr 1fr 1fr 8fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas:  "first_line_good_intention  first_line_good_intention  first_line_good_intention   first_line_good_intention  first_line_good_intention  first_line_good_intention   first_line_good_intention   first_line_good_intention"
+                        "first_line_evil_intention  first_line_evil_intention  first_line_evil_intention   first_line_evil_intention  first_line_evil_intention  first_line_evil_intention   first_line_evil_intention   first_line_evil_intention"
+                        "second_line_good_intention second_line_good_intention second_line_good_intention  second_line_good_intention second_line_good_intention second_line_good_intention  second_line_good_intention  second_line_good_intention"
+                        "second_line_evil_intention second_line_evil_intention second_line_evil_intention  second_line_evil_intention second_line_evil_intention second_line_evil_intention  second_line_evil_intention  second_line_evil_intention"
+                        "third_line_good_intention  third_line_good_intention  third_line_good_intention   third_line  third_line_good_intention  third_line_good_intention   third_line_good_intention   third_linee_geood_intention"
+                        "third_line_evil_intention  third_line_evil_intention  third_line_veil_intention   third_line_evil_intention  third_line_evil_intention  third_line_evil_intention   third_line_evil_intention   third_line_evil_intention"
+                        "fourth_line_good_intention fourth_line_good_intention fourth_line_good_intention  fourth_line_good_intention fourth_line_good_intention fourth_line_good_intention  fourth_line_good_intention  fourth_line_good_intention"
+                        "fourth_line fourth_line fourth_line  fourth_line fourth_line fourth_line  fourth_line  fourth_line"
+                        "fifth_line  fifth_line  fifth_line   fifth_line  fifth_line  fifth_line   fifth_line   fifth_line"
+                        "fifth_line  fifth_line  fifth_line   fifth_line  fifth_line  fifth_line   fifth_line   fifth_line"
+                        "sixth_line  sixth_line  sixth_line   sixth_line  sixth_line  sixth_line   sixth_line   sixth_line"
+                        "sixth_line  sixth_line  sixth_line   sixth_line  sixth_line  sixth_line   sixth_line   sixth_line"
+                        ".           ........... fire_text    fire_text   fire_text   fire_text    ............ ."
+                        ".           banner_left banner_left  icon        icon        banner_right banner_right ."
+                        ".           banner_left banner_left  icon        icon        banner_right banner_right ."
+                        ".           banner_left banner_left  saber       saber       banner_right banner_right ."
+                        ".           banner_left banner_left  saber       saber       banner_right banner_right .";
+  // justify-content: center;
 
     #fire_text {
       // text-align: center;
       text-transform: uppercase;
       font-weight: bolder;
-      font-size: 20px;
-      line-height: 20px;
       background: url('../images/fire.gif');
-      background-clip: text;
       font-size: 200px;
       // line-height: 20px;
       // height: 300px;
@@ -35,28 +113,72 @@ body {
     }
 
     
-    #light_saber {
+  #light_saber {
     width: 600px;
     height: 350px;
     // display: block;
     // margin: auto;
     clip-path: ellipse(40% 40% at 50% 50%);
     grid-area: saber;
+    justify-self: center;
   }
 
   .sith_icon_container {
     grid-area: icon;
     justify-self: center;
+    align-self: center;
   }
 
   .banner_left {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
    grid-area: banner_left;
-   max-width: 200px;
   }
   
   .banner_right {
+    img {
+      
+      max-width: 100%;
+      height: auto;
+    }
    grid-area: banner_right;
-   max-width: 200px;
   }
 }
 
+.page_2 {
+  background: url(../images/oath.jpg);
+  z-index: 2;
+}
+
+@media only screen and (min-width: 800px) {
+.end_page {
+
+  grid-template-columns: 1fr 2fr 4fr 4fr 2fr 1fr;
+  grid-template-areas:  "fire_text fire_text    fire_text  fire_text  fire_text    fire_text"
+                        "......... banner_left  icon       icon       banner_right ........."
+                        "......... banner_left  icon       icon       banner_right ........."
+                        "......... banner_left  saber      saber      banner_right ........."
+                        "......... banner_left  saber      saber      banner_right .........";
+  grid-template-rows: auto 100px auto;
+    
+  }
+
+  .banner_left {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+   grid-area: banner_left;
+  }
+  
+  .banner_right {
+    img {
+      
+      max-width: 100%;
+      height: auto;
+    }
+   grid-area: banner_right;
+  }
+}
