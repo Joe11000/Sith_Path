@@ -121,38 +121,46 @@ body {
 *, ::before, ::after {
   box-sizing: border-box; }
 
-.line_wrapper:nth-of-type(even) {
-  justify-content: right;
-  justify-self: right; }
-.line_wrapper .quote {
-  box-shadow: 0 0 75px 45px black inset;
-  display: flex;
+.line_wrapper {
   justify-content: center;
-  align-items: center;
-  background: red;
-  --quote-height: 200px;
-  height: var(--quote-height);
-  width: 100%;
-  color: yellow; }
-  .line_wrapper .quote::before {
-    content: '\"';
-    color: black;
-    font-size: 2em; }
-  .line_wrapper .quote::after {
-    content: '\"';
-    color: black;
-    font-size: 2em; }
-.line_wrapper .line_one .good_intention figure {
+  width: 100vw;
+  margin: 0;
   width: 100%;
   text-align: center;
-  margin: auto;
-  max-width: 100vw; }
-  .line_wrapper .line_one .good_intention figure img {
-    max-width: 100vw;
+  margin: 0; }
+  .line_wrapper:nth-of-type(even) {
+    justify-content: right;
+    justify-self: right; }
+  .line_wrapper .quote {
+    box-shadow: 0 0 150px 75px black inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    --quote-height: 200px;
+    height: var(--quote-height);
     width: 100%;
-    overflow: hidden; }
-.line_wrapper .line_one .sith_eyes {
-  background: url(../images/anakin_sith_eyes.jpg); }
+    color: yellow;
+    font-size: 2.5em; }
+    .line_wrapper .quote::before {
+      content: '\"';
+      color: black;
+      font-size: 2em; }
+    .line_wrapper .quote::after {
+      content: '\"';
+      color: black;
+      font-size: 2em; }
+  .line_wrapper figure {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin: 15px 0; }
+    .line_wrapper figure img {
+      max-width: 100vw;
+      width: 100%;
+      overflow: hidden; }
+  .line_wrapper .sith_eyes {
+    background: url(../images/anakin_sith_eyes.jpg); }
 
 .end_page {
   z-index: 1;
