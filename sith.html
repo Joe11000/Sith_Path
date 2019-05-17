@@ -11,9 +11,10 @@
       <div class="one good_intention">
         <figure><img src="images/passion.jpg" alt="Follow Your Passion"></figure>
         <figure><img src="images/passion2.jpg" alt="Follow Your Passion"></figure>
-        <figure><img src="images/passion3.jpg" alt="Follow Your Passion"></figure>
       </div> 
-      <div class="sith_eyes"></div>
+      <div class="sith_eyes clip_one">
+        <figure><img src="images/sith_eyes_female.jpg" alt=""></figure>
+      </div>
       <div class="one evil_intention">
         <figure><img src="images/mad_max.jpg" alt=""></figure>
       </div>
@@ -28,7 +29,8 @@
       </div>
       <div class="sith_eyes"></div>
       <div class="evil_intention">
-        <figure><img src="images/INDONESIA_-_fondamentalisti_in_piazza_e_armati.jpg" alt=""></figure>
+        <figure><img src="images/muslim-fundamentalists.jpg" alt=""></figure>
+        <figure><img src="images/muslim_extremism.jpg" alt=""></figure>
         <figure><img src="images/nazis.jpg" alt=""></figure>
         <figure><img src="images/angry_naruto.jpeg" alt=""></figure>
       </div>
@@ -41,7 +43,7 @@
 
       </div>
       <div class="evil_intention">
-        <figure><img src="voldemort_quote.jpg" alt=""></figure>
+        <figure><img src="images/voldemort_quote.jpg" alt=""></figure>
       </div>
     </div>
 
@@ -50,6 +52,8 @@
       <div class="good_intention">
       </div>
       <div class="evil_intention">
+        <figure><img src="images/guns.jpg" alt=""></figure>
+        <figure><img src="images/atomic_bomb.jpg" alt=""></figure>
       </div>
     </div>
 
@@ -59,20 +63,29 @@
       </div>
       <div class="evil_intention">
         <figure><img src="images/freedom4.jpg" alt=""></figure>
+        <figure><img src="images/breaking_chains.jpeg" alt=""></figure>
+        <figure><img src="images/" alt=""></figure>
       </div>
     </div>
 
     <div class="line_wrapper">
       <div class="quote">The Force Shall Free Me.</div>
       <div class="good_intention">
-        <img src="images/ultimate_freedom2.jpg" alt="">
-        <img src="images/freedom-from-desire-enlightenment.jpg" alt="">
+        <figure>
+          <img src="images/ultimate_freedom2.jpg" alt="">
+        </figure>
+
+        <figure>
+          <img src="images/freedom-from-desire-enlightenment.jpg" alt="">
+        </figure>
       </div>
       <div class="evil_intention">
           <figure><img src="images/freedom1.jpg" alt=""></figure>
           <figure><img src="images/freedom2.jpg" alt=""></figure>
 
-        <img src="images/joker.jpeg" alt="">
+        <figure>
+          <img src="images/joker.jpeg" alt="">
+        </figure>
       </div>
     </div>
   </div>
@@ -171,7 +184,44 @@
     </div>
   </div>
 
+  <div class='sith_master_selection'>
+
+    <p>Choose your Sith master. </p>
+    <select name="Sith Master" id="sith_master" onchange='switchImage()'>
+      <option value="">Unselected</option>
+      <option value="trump">Darth Trump</option>
+      <option value="traya">Darth Traya</option>
+      <option value="revan">Darth Revan</option>
+      <option value="nihilus">Darth Nihilus</option>
+      <option value="krate">Darth Krate</option>
+      <option value="yoda">Darth Yoda</option>
+      <option value="vader">Darth Vader</option>
+    </select>
+
+    <figure id='master_image'>
+      <img src="images/darth_trump.jpg" class='trump' alt="">  
+      <img src="images/darth_yoda.jpeg" class='yoda' alt="">  
+      <img src="images/darth_revan.jpeg" class='revan' alt="">  
+      <img src="images/darth_traya.jpg" class='traya' alt="">  
+      <img src="images/darth_nihilus.jpg" class='nihilus' alt="">  
+      <img src="images/darth_krate.jpg" class='krate' alt="">  
+      <img src="images/Darth_Sion.jpg" class='sion' alt="">  
+    </figure>
+    
+  </div>
   <!-- https://css-tricks.com/set-text-on-a-circle/ -->
 
+  <script>
+    function switchImage() {
+      debugger
+      let master = document.querySelector('#sith_master').value.toLowerCase();
+
+      document.querySelectorAll('#master_image img').forEach((el, i) => {
+        el.style.display = 'none';
+      });
+      
+      document.querySelector(`.${master}`).style.display = 'block';
+    }
+  </script>
 </body>
 </html>

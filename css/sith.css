@@ -124,7 +124,7 @@ body {
 .line_wrapper {
   justify-content: center;
   width: 100vw;
-  margin: 0;
+  margin: 50px 0 0 0;
   width: 100%;
   text-align: center;
   margin: 0; }
@@ -150,6 +150,8 @@ body {
       content: '\"';
       color: black;
       font-size: 2em; }
+  .line_wrapper .sith_eyes.clip_one {
+    position: relative; }
   .line_wrapper figure {
     width: 100%;
     text-align: center;
@@ -222,5 +224,7 @@ body {
     .banner_right img {
       max-width: 100%;
       height: auto; } }
+#master_image {
+  display: none; }
 
 /*# sourceMappingURL=sith.css.map */

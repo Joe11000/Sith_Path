@@ -11,7 +11,7 @@ body {
 .line_wrapper {
   justify-content: center;
   width: 100vw;
-  margin: 0;
+  margin: 50px 0 0 0;
   width: 100%;
   text-align: center;
   margin: 0;
@@ -44,6 +44,15 @@ body {
     }
   }
 
+  .sith_eyes.clip_one { 
+position: relative;
+    img {
+      // position: absolute;
+      // width: 100%;
+      // clip-path: polygon(0 100px, 100vw 100px, 100vw 200px, 0px 200px);
+
+    }
+  }
 
   figure {
     width: 100%;
@@ -179,4 +188,8 @@ body {
     }
    grid-area: banner_right;
   }
+}
+
+#master_image {
+  display: none;
 }
