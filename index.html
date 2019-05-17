@@ -184,29 +184,35 @@
     </div>
   </div>
 
+  <p class='your_sith_name' contenteditable="true">(Enter Your Sith Name)</p>
+
   <div class='sith_master_selection'>
 
     <p>Choose your Sith master. </p>
     <select name="Sith Master" id="sith_master" onchange='switchImage()'>
       <option value="">Unselected</option>
+      <option value="krate">Darth Krate</option>
+      <option value="nihilus">Darth Nihilus</option>
+      <option value="revan">Darth Revan</option>
       <option value="trump">Darth Trump</option>
       <option value="traya">Darth Traya</option>
-      <option value="revan">Darth Revan</option>
-      <option value="nihilus">Darth Nihilus</option>
-      <option value="krate">Darth Krate</option>
-      <option value="yoda">Darth Yoda</option>
       <option value="vader">Darth Vader</option>
+      <option value="yoda">Darth Yoda</option>
     </select>
 
+
+
     <figure id='master_image'>
+      <img src="images/darth_krate.jpg" class='krate' alt="">  
       <img src="images/darth_trump.jpg" class='trump' alt="">  
       <img src="images/darth_yoda.jpeg" class='yoda' alt="">  
-      <img src="images/darth_revan.jpeg" class='revan' alt="">  
+      <img src="images/darth_revan.png" class='revan' alt="">  
       <img src="images/darth_traya.jpg" class='traya' alt="">  
       <img src="images/darth_nihilus.jpg" class='nihilus' alt="">  
-      <img src="images/darth_krate.jpg" class='krate' alt="">  
-      <img src="images/Darth_Sion.jpg" class='sion' alt="">  
+      <img src="images/Darth_Sion.jpg" class='sion' alt=""> 
+      <img src="images/darth_vader.jpeg" class='vader' alt=""> 
     </figure>
+  
     
   </div>
   <!-- https://css-tricks.com/set-text-on-a-circle/ -->
@@ -219,9 +225,10 @@
       document.querySelectorAll('#master_image img').forEach((el, i) => {
         el.style.display = 'none';
       });
-      
+      debugger
       document.querySelector(`.${master}`).style.display = 'block';
     }
   </script>
+
 </body>
 </html>
