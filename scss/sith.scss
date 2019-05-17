@@ -197,12 +197,15 @@ position: relative;
 }
 .sith_master_selection {
   text-align: center;
-
   * { color: white; }
+
   #master_image {
     width: 50%;
     margin: auto;
+    margin-top: 20px;
     text-align: center;
+
+
     img {
       display: none;
       max-width: 50vw;
@@ -211,5 +214,5 @@ position: relative;
 }
 
 .end_page {
-  margin-top: 100px;
+  margin-top: 150px;
 }
