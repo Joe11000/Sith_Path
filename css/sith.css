@@ -204,7 +204,7 @@ body {
       height: auto; }
 
 .page_2 {
-  background: url(../images/oath.jpg);
+  background: url("../images/oath.jpg");
   z-index: 2; }
 
 @media only screen and (min-width: 800px) {
@@ -244,5 +244,34 @@ body {
 
 .end_page {
   margin-top: 150px; }
+
+.count {
+  color: white;
+  counter-reset: my-counter; }
+  .count ul {
+    list-style: lower-greek outside url("../images/not_an_image.jpg"); }
+  .count li::before {
+    counter-increment: my-counter;
+    content: counter(my-counter) ": "; }
+
+.blend {
+  height: 200px;
+  width: 75%;
+  margin: auto;
+  background-color: red;
+  background-image: radial-gradient(#e66465, #9198e5), url("../images/sith_eyes_female.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 15px 15px 75px 45px inset;
+  background-position: center center; }
+
+@media screen and (max-width: 600px) {
+  .blend {
+    background-position: left top;
+    box-shadow: -63px 0px 75px 56px inset; } }
+@media screen and (min-width: 1200px) {
+  .blend {
+    box-shadow: 0px 10px 93px 59px inset; } }
 
 /*# sourceMappingURL=sith.css.map */
