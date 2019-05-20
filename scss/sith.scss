@@ -21,12 +21,14 @@ body {
     justify-self: right;
   }
   .quote {
-    box-shadow: 0 0 150px 75px black inset;
+    --quote-height: 100px;
+    box-shadow: 0 0 75px 40px black inset;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background: red;
-    --quote-height: 200px;
     height: var(--quote-height);
     width: 100%;
     color: yellow; 
@@ -45,7 +47,7 @@ body {
   }
 
   .sith_eyes.clip_one { 
-position: relative;
+    position: relative;
     img {
       // position: absolute;
       // width: 100%;
@@ -264,5 +266,22 @@ position: relative;
   .blend {
     box-shadow: 0px 10px 93px 59px inset;
 
+  }
+}
+
+
+.title_crawl {
+  perspective: 100px;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border: 1px solid white;
+  
+  .text {
+    position: absolute; 
+    padding: 50px; 
+    transform: rotateX(45deg);
+    transform-style: preserve-3d;
+    color: white;
   }
 }
